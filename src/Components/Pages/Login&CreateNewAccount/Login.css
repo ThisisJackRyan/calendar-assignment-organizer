@@ -1,0 +1,67 @@
+:root{
+
+}
+
+
+body{
+    background: linear-gradient(0.25turn, #054059, #f8f8e1, #65036c);/*old middle color :ebf8e1*/
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 16px;
+}
+
+
+
+.loginBox{
+    background: transparent;/*old middle color :ebf8e1*/
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 15em;
+}
+
+.loginTitle{
+    font-size: 3em;
+    border-bottom: solid black 2px;
+    margin: 1rem
+    
+}
+
+.inputsBox{
+    border: solid black 2px;
+    border-radius: 1em;
+    padding: 1em;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:1em;
+    font-size: 1.5em;
+    
+    
+}
+.inputsTitle{
+    border-bottom: dashed black 2px;
+    
+}
+.inputs input{
+    border:none;
+    transition: all ease 0.5s;
+    border-radius: 2px;
+    padding: 2px;
+    padding-left:3px;
+}
+.inputs input:focus{
+    outline-style: solid;
+    outline-color: black;
+    outline-width: 2px;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.7);
+}
+
+.differentAccount{
+    font-size: .75em;
+    padding-bottom: 0.5em;
+}
