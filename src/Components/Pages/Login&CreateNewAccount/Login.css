@@ -65,3 +65,11 @@ body{
     font-size: .75em;
     padding-bottom: 0.5em;
 }
+
+.changeForm{
+    color: blue;
+    text-decoration: underline;
+}
+.changeForm:hover{
+    color: red;
+}

@@ -1,11 +1,11 @@
-import './Login.css'
 
 
-const Login = (props) => {
+
+const CreateNewAccount = (props) => {
     return (
         <div className="container">
             <div className='loginBox'>
-                <div className='loginTitle'>Login</div>
+                <div className='loginTitle'>Create a New Account</div>
                 <div className='inputsBox'>
                     <div className=' inputs'>
                         <div className='inputsTitle'>Email</div>
@@ -21,17 +21,18 @@ const Login = (props) => {
                     </div>
                     <div className='differentAccount'>
                         <span>
-                            Don't have an Account? 
+                            Already have an Account?
                         </span>
-                        <span  className="changeForm" onClick={() => props.switchForm('CreateNewLogin')}>
-                            Create Account
+                        <span  className="changeForm" onClick={() => props.switchForm('login')}>
+                            Login
                         </span> 
+                        
                     </div>
                 </div>
                 
             </div>
         </div>
-    )
+    );
 }
 
-export default Login; 
+export default CreateNewAccount;
