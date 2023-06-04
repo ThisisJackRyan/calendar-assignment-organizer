@@ -16,15 +16,19 @@ body{
     
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     flex-direction: column;
-    margin: 15em;
+    height: 100dvh;
 }
 
 .loginTitle{
+    display: flex;
+    align-items: center;
+    justify-content: left;
     font-size: 3em;
     border-bottom: solid black 2px;
-    margin: 1rem
+    margin: 1rem;
+    
     
 }
 
@@ -32,27 +36,34 @@ body{
     border: solid black 2px;
     border-radius: 1em;
     padding: 1em;
+    width:25em
 }
 .inputs{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin:1em;
     font-size: 1.5em;
-    
-    
+    width:100%
 }
 .inputsTitle{
-    border-bottom: dashed black 2px;
+    text-decoration: underline dashed black 2px;
+    margin-bottom: .5rem;
+    padding-left: 1rem;
     
 }
+
 .inputs input{
+    font-size: 16px;
     border:none;
     transition: all ease 0.5s;
-    border-radius: 2px;
-    padding: 2px;
-    padding-left:3px;
+    border-radius: 4px;
+    padding-left: 1rem;
+    padding-right:1rem;
+    padding-top:0.875rem;
+    padding-bottom:0.875rem;
+    height: 1.25rem;
+    width:80%
+}
+.inputs input:hover{
+    cursor: pointer;
 }
 .inputs input:focus{
     outline-style: solid;
@@ -62,8 +73,12 @@ body{
 }
 
 .differentAccount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: .75em;
     padding-bottom: 0.5em;
+
 }
 
 .changeForm{
