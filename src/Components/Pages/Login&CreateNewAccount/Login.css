@@ -84,6 +84,7 @@ body{
 .changeForm{
     color: blue;
     text-decoration: underline;
+    cursor: pointer;
 }
 .changeForm:hover{
     color: red;
