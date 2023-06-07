@@ -38,19 +38,20 @@ const Calendar = () => {
         }
         return monthName;
     }
+    
     const date = new Date();
-    /*const showDaysOfMonth = () => {
-        for(let i = 1; i < 31; i++){
-            <Day  getWeekDay={getDayOfWeek} Date="2023-6-6" />
-        }
-    }*/
+
+    const calendar = [];
+    for(let i = 1; i < 31; i++){
+        calendar.push(<Day  getWeekDay={getDayOfWeek} Date="2023-6-6" />)
+    }
     return(
         <div>
             <div className="ThisMonthName">
                 {getMonthName(date.getMonth())}
             </div>
-            <div>   
-                {<Day  getWeekDay={getDayOfWeek} Date="2023-6-6" />}
+            <div>
+                {calendar}
             </div>
             
         </div>
