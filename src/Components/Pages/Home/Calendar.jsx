@@ -42,15 +42,34 @@ const Calendar = () => {
     const date = new Date();
 
     const calendar = [];
-    for(let i = 1; i < 31; i++){
-        calendar.push(<Day  getWeekDay={getDayOfWeek} Date="2023-6-6" />)
+    for(let i = 1; i <= 31; i++){
+        const newDate = new Date(`2023-6-${i}`);
+        newDate.getDay() === 0 ? (
+                calendar.push(
+                <div className="NewRow">
+                    <Day  getWeekDay={getDayOfWeek} Date={`2023-6-${i}`} />
+                    <Day  getWeekDay={getDayOfWeek} Date={`2023-6-${i+=1}`} />
+                    <Day  getWeekDay={getDayOfWeek} Date={`2023-6-${i+=1}`} />
+                    <Day  getWeekDay={getDayOfWeek} Date={`2023-6-${i+=1}`} />
+                    <Day  getWeekDay={getDayOfWeek} Date={`2023-6-${i+=1}`} />
+                    <Day  getWeekDay={getDayOfWeek} Date={`2023-6-${i+=1}`} />
+                    <Day  getWeekDay={getDayOfWeek} Date={`2023-6-${i+=1}`} />
+                   
+                </div>
+                )
+        ) : (
+            calendar.push(<Day  getWeekDay={getDayOfWeek} Date={`2023-6-${i}`} />)
+
+        )
+            
+        
     }
     return(
-        <div>
+        <div className="container">
             <div className="ThisMonthName">
                 {getMonthName(date.getMonth())}
             </div>
-            <div>
+            <div className="">
                 {calendar}
             </div>
             

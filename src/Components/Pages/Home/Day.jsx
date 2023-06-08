@@ -5,8 +5,10 @@ const Day = (props) => {
 
     const date = new Date(props.Date);//Year, Month, Day
                                     //Year , Month-1, Day
-    return (
-        <div className="container">
+
+    
+    return ( 
+        <div>
             <div className="dayBox">
                 <div className="dayOfTheWeek">
                 {
